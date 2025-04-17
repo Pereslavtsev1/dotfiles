@@ -6,7 +6,10 @@
     home.packages = [
         pkgs.xh
         pkgs.unzip
+        pkgs.btop
         pkgs.bat
+        pkgs.glow
+        pkgs.git-credential-manager
     ];
     home.shellAliases = {
         ls="eza --icons --group-directories-first";

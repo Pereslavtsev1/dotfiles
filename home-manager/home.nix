@@ -10,6 +10,9 @@
         ".config/nvim".recursive = true;
     };
 
+    home.file = {
+        ".config/starship".source = ../starship/starship.toml;
+    };
     home.sessionVariables = {
         NEOVIM_BIN = "/home/pereslavtsev/.nix-profile/bin/nvim";
     };

@@ -27,16 +27,16 @@ opt.autoread = true
 vim.bo.autoread = true
 -- wsl
 vim.g.clipboard = {
-  name = "WslClipboard",
+  name = "win32yank-wsl",
   copy = {
-    ["+"] = "clip.exe",
-    ["*"] = "clip.exe",
+    ["+"] = "win32yank.exe -i --crlf",
+    ["*"] = "win32yank.exe -i --crlf",
   },
   paste = {
-    ["+"] = "powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).ToString())",
-    ["*"] = "powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).ToString())",
+    ["+"] = "win32yank.exe -o --lf",
+    ["*"] = "win32yank.exe -o --lf",
   },
-  cache_enabled = 0,
+  cache_enabled = true,
 }
 
 vim.api.nvim_create_autocmd("TextYankPost", {
