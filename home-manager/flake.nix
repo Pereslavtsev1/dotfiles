@@ -9,7 +9,7 @@
 	outputs = { self, nixpkgs, home-manager, ... }: {
 		homeConfigurations."pereslavtsev" = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.x86_64-linux; 
-			modules = [ ./home.nix ./neovim.nix ./gh.nix ./fzf.nix ./lang.nix ./tools.nix ];
+			modules = [ ./home.nix ./lang.nix ./tools.nix ];
 		};
 	};
 }

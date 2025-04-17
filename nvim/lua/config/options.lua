@@ -24,6 +24,7 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.swapfile = false
 opt.autoread = true
+vim.g.lazyvim_cmp = "blink.cmp"
 vim.bo.autoread = true
 -- wsl
 vim.g.clipboard = {
