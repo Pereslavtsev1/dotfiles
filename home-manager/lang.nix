@@ -8,6 +8,7 @@
 		pkgs.gcc 
 		pkgs.nodejs_23
         pkgs.pnpm
+        pkgs.uv
 		pkgs.python313
 	];
 }

@@ -6,13 +6,11 @@
     home.packages = [
     ];
     home.file = {
-        ".config/nvim".source = ../nvim;
-        ".config/nvim".recursive = true;
+        # ".config/nvim".source = ../nvim;
+        # ".config/nvim".recursive = true;
+        ".config/starship.toml".source = ../starship/starship.toml;
     };
 
-    home.file = {
-        ".config/starship".source = ../starship/starship.toml;
-    };
     home.sessionVariables = {
         NEOVIM_BIN = "/home/pereslavtsev/.nix-profile/bin/nvim";
     };
