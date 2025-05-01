@@ -22,3 +22,4 @@ opt.smartcase = true
 opt.swapfile = false
 opt.autoread = true
 vim.lsp.set_log_level("off")
+vim.g.snacks_animate = false

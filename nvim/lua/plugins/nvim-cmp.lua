@@ -1,8 +1,9 @@
 return {
   "hrsh7th/nvim-cmp",
-  dependencies = {
+  {
     "tailwind-tools",
     "onsails/lspkind-nvim",
+    lazy = true,
   },
   opts = function()
     return {

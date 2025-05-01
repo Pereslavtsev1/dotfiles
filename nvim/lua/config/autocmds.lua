@@ -6,3 +6,7 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+vim.api.nvim_create_autocmd("BufWritePost", {
+  pattern = { "*.html", "*.css", "*.jsx", "*.tsx", "*.vue", "*.svelte", "*.astro", "*.php" }, -- Укажите здесь типы файлов, для которых нужна сортировка
+  command = "TailwindSortSync",
+})

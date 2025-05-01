@@ -26,7 +26,8 @@
         pkgs.bat
         pkgs.glow
         pkgs.git-credential-manager
-
+        pkgs.posting
+        pkgs.jq
     ];
     home.shellAliases = {
         ls="eza --icons --group-directories-first";

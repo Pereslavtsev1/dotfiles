@@ -1,6 +1,8 @@
 return {
   {
-    "craftzdog/solarized-osaka.nvim",
+    -- "catppuccin/nvim",
+    "tiagovla/tokyodark.nvim",
+    -- "craftzdog/solarized-osaka.nvim",
     lazy = false,
     priority = 1000,
     opts = {
@@ -81,7 +83,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "solarized-osaka",
+      colorscheme = "tokyodark",
     },
   },
 }

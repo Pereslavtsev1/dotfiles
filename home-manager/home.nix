@@ -5,13 +5,13 @@
     home.stateVersion = "24.11";
     home.packages = [
     ];
+    # home.file = {
+    #     ".config/nvim".source = ../nvim;
+    #     ".config/nvim".recursive = true;
+    # };
+    #
     home.file = {
-        ".config/nvim".source = ../nvim;
-        ".config/nvim".recursive = true;
-    };
-
-    home.file = {
-        ".config/starship".source = ../starship/starship.toml;
+        ".config/starship.toml".source = ../starship/starship.toml;
     };
     home.sessionVariables = {
         NEOVIM_BIN = "/home/pereslavtsev/.nix-profile/bin/nvim";
